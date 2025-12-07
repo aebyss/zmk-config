@@ -1,4 +1,0 @@
-backlight {
-    compatible = "zmk,backlight";
-    pixel-range = <6 22>;
-};
