@@ -1,3 +1,4 @@
-&led_strip {
-    chain-length = <6>;   /* Nur die ersten 6 LEDs testen */
+backlight {
+    compatible = "zmk,backlight";
+    pixel-range = <6 22>;
 };
