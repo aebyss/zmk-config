@@ -1,0 +1,14 @@
+/ {
+    underglow: rgb_strip {
+        compatible = "zmk,rgb-led-strip";
+        label = "All LEDs";
+
+        chain-length = <28>;   // 22 per-key + 6 underglow
+        output-gpios = <&gpio0 06 GPIO_ACTIVE_HIGH>; // Beispiel-Pin
+        color-order = "GRB";
+    };
+
+    chosen {
+        zmk,underglow = &underglow;
+    };
+};
