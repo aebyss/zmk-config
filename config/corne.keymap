@@ -64,7 +64,7 @@
                         &trans &kp A  &kp S    &kp D  &trans &trans      &trans &trans &trans &trans &trans &trans
                         &trans &trans &trans   &trans &trans &trans      &trans &trans &trans &trans &trans &trans
 
-                                        &ALT &SPACE &trans     &trans &trans &trans
+                                        &LALT &SPACE &trans     &trans &trans &trans
     >;
         };
     };
