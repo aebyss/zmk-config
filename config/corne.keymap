@@ -12,30 +12,31 @@
     chain-length = <64>;
 };
 
- / {
+/ {
     behaviors {
-        gaming_toggle: gaming_toggle {
-            compatible = "zmk,behavior-hold-tap";
-            label = "GAMING_TOGGLE";
+        td_lower_gaming: td_lower_gaming {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_LOWER_GAMING";
+
+            // Tap = LOWER (momentary)
+            // Double-tap = TOGGLE Gaming Layer 1
+            bindings = <&mo 1>, <&tog 3>;
 
             tapping-term-ms = <200>;
-            hold-trigger-ms = <3000>;
-
-            /* tap, hold */
-            bindings = <&kp SPACE &tog 1>;
         };
     };
+};
 
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
-            display-name = "Vidar Layer";
+            display-name = "Normal Layer";
             bindings = <
                 &kp TAB   &kp Q &kp W &kp E &kp R &kp T     &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
                 &kp LSHIFT &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
                 &kp LCTRL &kp Y &kp X &kp C &kp V &kp B    &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
-                                   &kp LGUI &gaming_toggle &mo 1   &kp RET &mo 2 &kp RALT
+                                   &kp LGUI &kp SPACE &mo 1   &kp RET &mo 2 &kp RALT
             >;
         };
 
@@ -58,5 +59,16 @@
                                    &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
             >;
         };
-    };
+
+        gaming_layer {
+                display-name = "Gaming Layer";
+                bindings = <
+                        
+                        &trans &trans &kp W    &trans &trans &trans      &trans &trans &trans &trans &trans &trans
+                        &trans &kp A  &kp S    &kp D  &trans &trans      &trans &trans &trans &trans &trans &trans
+                        &trans &trans &trans   &trans &trans &trans      &trans &trans &trans &trans &trans &trans
+
+                                        &trans &trans &trans     &trans &trans &trans
+    >;
+};
 };
