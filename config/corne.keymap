@@ -15,14 +15,11 @@
 / {
     behaviors {
         td_lower_gaming: td_lower_gaming {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_LOWER_GAMING";
+        compatible = "zmk,behavior-tap-dance";
+        #binding-cells = <0>;
 
-            // Tap = LOWER (momentary)
-            // Double-tap = TOGGLE Gaming Layer 1
-            bindings = <&mo 1>, <&tog 3>;
-
-            tapping-term-ms = <200>;
+        bindings = <&mo 1>, <&tog 3>;
+        tapping-term-ms = <200>;
         };
     };
 
@@ -69,6 +66,6 @@
 
                                         &trans &trans &trans     &trans &trans &trans
     >;
-};
+        };
     };
 };
