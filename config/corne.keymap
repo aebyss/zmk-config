@@ -60,7 +60,7 @@
                 display-name = "Gaming Layer";
                 bindings = <
                         
-                        &trans &trans &kp W    &trans &trans &trans      &trans &trans &trans &trans &trans &trans
+                        &kp TAB &trans &kp W    &trans &trans &trans      &trans &trans &trans &trans &trans &trans
                         &trans &kp A  &kp S    &kp D  &trans &trans      &trans &trans &trans &trans &trans &trans
                         &trans &trans &trans   &trans &trans &trans      &trans &trans &trans &trans &trans &trans
 
