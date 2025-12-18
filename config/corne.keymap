@@ -50,7 +50,7 @@
             display-name = "Raise Layer";
             bindings = <
                 &kp TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR &kp DEL
-                &kp LCTRL &kp LA(Q)   &kp LA(P) &kp LA(Y)   &kp LA(S)   &trans      &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT &kp BSLH &kp GRAVE
+                &kp LCTRL &kp LC(LA(Q))   &kp LC(LA(P)) &kp LC(LA(Y))   &kp LC(LA(S))   &trans      &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT &kp BSLH &kp GRAVE
                 &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &kp PIPE &kp TILDE
                                    &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
             >;
