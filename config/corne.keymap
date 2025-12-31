@@ -9,10 +9,10 @@
 #include <dt-bindings/zmk/bt.h>
 
 &led_strip {
-    chain-length = <12>;
+    chain-length = <56>;
 };
 
-/ {
+/ { 
     behaviors {
         td_lower_gaming: td_lower_gaming {
         compatible = "zmk,behavior-tap-dance";
