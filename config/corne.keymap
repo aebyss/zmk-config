@@ -12,7 +12,9 @@
     chain-length = <27>;
 };
 
- combos {
+
+
+/  combos {
         compatible = "zmk,combos";
 
         screenshot_combo {
@@ -20,9 +22,8 @@
             key-positions = <30 34>;
             bindings = <&kp PSCRN>;
         };
-    };
-
-/ {
+    }; 
+{
         keymap {
                 compatible = "zmk,keymap";
 
