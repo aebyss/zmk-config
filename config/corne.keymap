@@ -18,9 +18,8 @@
         behaviors {
                 td_gaming: tap_dance_gaming {
                         compatible = "zmk,behavior-tap-dance";
-                        label = "TAP_DANCE_GAMING";
                         #binding-cells = <0>;
-                        taps-ms = <200>;
+                        wait-ms = <200>;
                         bindings = <&mo 1>, <&mo 3>;
                 };
         };
