@@ -19,8 +19,8 @@
 #
 ---
 include:
-  - board: nice_nano_v2
-    shield: dongle
+  - board: nrf52840dongle/nrf52840
+    shield: corne_dongle
     artifact-name: dongle
 
   - board: nice_nano_v2
